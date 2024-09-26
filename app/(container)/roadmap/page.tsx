@@ -10,8 +10,8 @@ import ButtonIcon from "@/components/shared/ButtonIcon";
 const Roadmap = () => {
 
     return <div>
-        <div className=" pt-[140px] flex items-start justify-between mb-[115px]  overflow-hidden">
-            <div className="w-[572px] flex flex-col gap-[45px] pl-[52px]">
+        <div className=" pt-[140px] flex items-start justify-between mb-[115px] gap-2 max-[940px]:flex-col overflow-hidden">
+            <div className="w-[572px] flex flex-col gap-[45px] pl-[52px] max-[590px]:w-full max-[590px]:px-2">
                 <p className="custom-text-heading">Roadmap for
                     DONQ NFT Nodes
                 </p>
@@ -33,8 +33,8 @@ const Roadmap = () => {
             </div>
         </div>
         <div className="mb-[180px]">
-            <div className="flex items-center justify-end w-full pr-[164px] pt-[140px] ">
-                <div className="w-[640px] ">
+            <div className="flex items-center justify-end w-full pr-[164px] pt-[140px] max-[700px]:px-2">
+                <div className="w-[640px] max-[700px]:w-full">
                     <p className="custom-text-heading">
                         Team & Advisers for
                         DONQ NFT Nodes
@@ -46,8 +46,8 @@ const Roadmap = () => {
         <div>
             <LogoPartnerList />
         </div>
-        <div className="pt-[140px] px-[45px] mb-[100px] ">
-            <p className="custom-text-heading w-[700px] pb-[54px]">
+        <div className="pt-[140px] px-[45px] mb-[100px] max-[740px]:px-2">
+            <p className="custom-text-heading w-[700px] pb-[54px] max-[740px]:w-full ">
                 If you have questions,
                 see our FAQ
             </p>
@@ -65,8 +65,8 @@ const Roadmap = () => {
                 />
             </div>
             <div className="flex flex-col items-center justify-start pt-[290px] h-full relative z-20">
-                <p className="text-[129px] font-poppins text-white uppercase font-semibold relative z-20">Donthepia</p>
-                <p className="font-pretendard text-[20px] text-[#878787] -mt-2 relative z-20">더 많은 혜택을 받고 싶다면 DONTHEPIA 커뮤니티에 가입하세요.</p>
+                <p className="text-[129px] font-poppins text-white uppercase font-semibold relative z-20 max-[730px]:text-5xl">Donthepia</p>
+                <p className="font-pretendard text-[20px] text-[#878787] -mt-2 relative z-20 max-[730px]:px-2">더 많은 혜택을 받고 싶다면 DONTHEPIA 커뮤니티에 가입하세요.</p>
                 <div className="absolute bottom-64 right-[235px] z-0">
                     <Image
                         src={'/assets/img-bottom-03.png'}
@@ -110,12 +110,12 @@ const Roadmap = () => {
                 />
             </div>
             <div className="absolute bottom-[40px] left-[48px] right-[48px] ">
-                <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-[264px]">
+                <div className="flex items-center justify-between max-[1100px]:block">
+                    <div className="flex items-center gap-[264px] max-[750px]:block max-[750px]:text-center">
                         <p className="text-[15.5px] text-white font-poppins">Copyright 2024. Donthepia INC. All rights reserved.</p>
                         <p className="text-[15.5px] text-white font-poppins">Mail@donthepia.com</p>
                     </div>
-                    <div className="flex items-center gap-[8px] justify-end ">
+                    <div className="flex items-center gap-[8px] justify-end max-[1100px]:justify-center max-[1100px]:pt-2 ">
                         <ButtonIcon
                             icon={{
                                 name: 'x',

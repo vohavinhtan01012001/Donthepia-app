@@ -78,10 +78,19 @@ const Home = () => {
             }}>
         </div>
         <div className='pb-[101px]'>
-            <div className='pt-7 h-[110vh]'>
-                <div className='grid grid-cols-2 gap-5 px-[50px] pt-[138px] h-full'>
-                    <div className=''>
-                        <div className=''>
+            <div className='pt-7 h-[110vh] max-[1000px]:h-[150vh] max-[850px]:h-[230vh]'>
+                <div className='grid grid-cols-2 gap-5 px-[50px] pt-[138px] max-[1000px]:pt-[2px] max-[1000px]:px-2 h-full'>
+                    <div className='hidden max-[1300px]:flex items-center col-span-2'>
+                        <p
+                            className='custom-text-heading max-[500px]:text-3xl'
+                        >
+                            A digital adventure with
+                            Donthepia, The beginning
+                            of a decentralized art That connects the world.
+                        </p>
+                    </div>
+                    <div className='max-[850px]:col-span-2'>
+                        <div className='max-[1300px]:hidden'>
                             <p
                                 className='custom-text-heading'
                             >
@@ -90,7 +99,7 @@ const Home = () => {
                                 of a decentralized art That connects the world.
                             </p>
                         </div>
-                        <div className='w-[431px] mx-auto pt-[90px]'>
+                        <div className='w-[431px] mx-auto pt-[90px] max-[850px]:pt-2 max-[450px]:w-full'>
                             <p
                                 className='text-left custom-text'
                             >
@@ -109,8 +118,8 @@ const Home = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='h-full flex items-center gap-[51px]'>
-                        <div className='flex flex-col justify-end h-full pb-32'>
+                    <div className='h-full flex items-center gap-[51px] max-[1000px]:flex-col max-[1000px]:gap-y-2 max-[850px]:col-span-2'>
+                        <div className='flex flex-col justify-end h-full pb-32 max-[1000px]:pb-0'>
                             <Image
                                 src={'/assets/imgAbout1.png'}
                                 width={386}
@@ -141,20 +150,20 @@ const Home = () => {
                 width: '100%'
             }}
         >
-            <div className='w-[755px] pt-[98px] mx-auto'>
-                <p className="custom-text-heading text-center ">Join the community to get even more benefits.</p>
+            <div className='w-[755px] pt-[98px] mx-auto max-[760px]:w-full max-[760px]:px-2 '>
+                <p className="custom-text-heading text-center max-[760px]:text-3xl">Join the community to get even more benefits.</p>
             </div>
             <div className='absolute top-0 bottom-0 right-[48px] flex flex-col justify-center'>
                 <ButtonNetworkList />
             </div>
-            <div className='absolute bottom-0 left-[48px]'>
+            <div className='absolute bottom-0 left-[48px] max-[1300px]:mb-28 max-[720px]:left-0 max-[720px]:right-0'>
                 <DateTimeIcons />
             </div>
-            <div className='absolute bottom-0 right-[48px] pb-2'>
-                <div className='px-4 uppercase text-base font-poppins bg-white text-black  w-[676px] flex items-center justify-around rounded-full h-[83px]'>
+            <div className='absolute bottom-0 right-[48px] pb-2 max-[760px]:right-0 max-[760px]:left-0 max-[680px]:px-2'>
+                <div className='px-4 uppercase text-base font-poppins bg-white text-black  w-[676px] max-[680px]:w-full  flex items-center justify-around rounded-full h-[83px] max-[760px]:mx-auto'>
                     {
                         listName.map((item, index) =>
-                            <div key={index}>
+                            <div key={index} className='max-[500px]:text-sm'>
                                 <p>{item}</p>
                                 <p>0000.000</p>
                             </div>
@@ -178,7 +187,7 @@ const Home = () => {
                     width: '100%'
                 }}
             >
-                <div className='w-[720px] float-end mr-[150px] pt-[140px] pb-[120px]'>
+                <div className='w-[720px] float-end mr-[150px] pt-[140px] pb-[120px] max-[900px]:float-none max-[900px]:px-2 max-[900px]:pt-[50px] max-[730px]:w-full'>
                     <p className='custom-text-heading'>
                         About the antipathy of
                         DONQ NFT Nodes
@@ -189,7 +198,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div
-                    className='w-full'
+                    className='w-full px-2'
                 >
                     <Image
                         src={'/assets/imgDonqNftNodes.png'}
@@ -201,18 +210,18 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className='bg-black w-full h-screen mb-[216px] px-[48px]'>
-            <div className='w-[630px] pt-[140px]'>
+        <div className='bg-black w-full h-screen mb-[216px] px-[48px] max-[640px]:px-2 max-[690px]:px-2'>
+            <div className='w-[630px] pt-[140px] max-[640px]:w-full max-[690px]:w-full'>
                 <p className='custom-text-heading'>What is an
                     <br />
                     Eco-System DONQ?
                 </p>
-                <p className='pr-[54px] custom-text'>
+                <p className='pr-[54px] custom-text max-[620px]:px-2'>
                     DONQ는 NFT와 T2E Trading , P2E Game을 결합하여 어떠한 거래에 대해서도 중앙 기관이나 제3자에 의한 허가가 필요없는 DAO 조직을
                     <br />형성하여 유저들이 자율적으로 판단하고 투표하여 생태계를 이끌고 확장할 수 있도록 합니다.
                 </p>
             </div>
-            <div className='pt-[102px] w-[1516px] mx-auto relative'>
+            <div className='pt-[102px] w-[1516px] max-[1580px]:w-full mx-auto relative'>
                 <p className='text-[80px] text-[#232323] text-center font-poppins'>What does DAO stand for</p>
                 <div className=' font-poppins text-[80px] text-white flex items-center justify-center mx-auto gap-[96px] overflow-x-hidden whitespace-nowrap border-y-[2px] border-y-[#686868]'>
                     <p>What is T2E?</p>
@@ -220,12 +229,13 @@ const Home = () => {
                     <p>What is T2E?</p>
                 </div>
                 <p className='text-[80px] text-[#232323] text-center font-poppins'>Know about P2E</p>
-                <div className='absolute bottom-8 right-[115px]'>
+                <div className='absolute bottom-8 right-[115px] max-[500px]:right-0 max-[500px]:left-0'>
                     <div className='z-10'>
                         <IconSet
                             name='box'
                             height={429}
                             width={357}
+                            className='max-[500px]:mx-auto'
                         />
                     </div>
                     <div className='absolute top-[82px] mx-auto w-full z-20'>
@@ -243,10 +253,10 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className='h-[120vh] w-full px-[202px] pb-[140px]'>
-            <div className='flex items-start pt-[160px] justify-between h-full'>
+        <div className='h-[120vh] w-full px-[202px] pb-[140px] overflow-hidden max-[1700px]:px-2'>
+            <div className='flex items-start pt-[160px] justify-between h-full max-[1700px]:justify-around max-[1300px]:flex-col'>
                 <div className='h-full'>
-                    <div className=' flex items-center'>
+                    <div className=' flex items-center max-[870px]:justify-center'>
                         <p className='text-[100px] leading-[100px] tracking-[-2px] text-[#f1302f] '>
                             Free Characters
                         </p>
@@ -257,11 +267,11 @@ const Home = () => {
                             className='mt-[15px] ml-[22px]'
                         />
                     </div>
-                    <p className='text-[100px] leading-[100px] tracking-[-2px] text-white pt-[35px]'>Interest farming</p>
-                    <p className='text-[100px] leading-[100px] tracking-[-2px] text-white pt-[19px]'>Platform</p>
-                    <p className='text-[100px] leading-[100px] tracking-[-2px] text-white pt-[41px]'>Governance</p>
+                    <p className='text-[100px] leading-[100px] tracking-[-2px] text-white max-[450px]:text-[60px] pt-[35px]'>Interest farming</p>
+                    <p className='text-[100px] leading-[100px] tracking-[-2px] text-white max-[450px]:text-[60px] pt-[19px]'>Platform</p>
+                    <p className='text-[100px] leading-[100px] tracking-[-2px] text-white max-[450px]:text-[60px] pt-[41px]'>Governance</p>
                 </div>
-                <div className='w-[425px] text-[20px] text-white pt-4 h-full flex flex-col justify-between'>
+                <div className='w-[425px] text-[20px] text-white pt-4 h-full flex flex-col justify-between max-[450px]:w-full'>
                     <p className='font-pretendard'>
                         DONQ NFT NODE 보유자는 DonThePia (Donquixote The Utopia) 생태계에서 생성되는
                         <br />다양한 NFT 캐릭터들을 무상으로 받을 수 있습니다.
@@ -275,11 +285,11 @@ const Home = () => {
             </div>
 
         </div>
-        <div className='h-[120vh] px-[202px]'>
+        <div className='h-[120vh] px-[202px] max-[1100px]:px-2'>
             <div className='pt-[130px] pb-[79px]'>
                 <p className='custom-text-heading text-center'>DONQ Token Information</p>
             </div>
-            <div className='mb-[92px] flex items-center justify-between w-[1516px] mx-auto border-y-[2px] border-y-[#686868] pr-[60px] pl-[8px]'>
+            <div className='mb-[92px] flex items-center justify-between w-[1516px] mx-auto border-y-[2px] border-y-[#686868] pr-[60px] pl-[8px] max-[1700px]:w-full max-[500px]:px-2 max-[500px]:flex-col max-[500px]:text-center'>
                 {
                     listTokenInfo.map((item, index) => {
                         return <div key={index} className='flex flex-col gap-[14px] py-[23px]'>
@@ -289,8 +299,8 @@ const Home = () => {
                     })
                 }
             </div>
-            <div className='flex items-start gap-[193px]'>
-                <div className='pl-[40px] pr-[74px] '>
+            <div className='flex items-start gap-[193px] max-[1625px]:gap-0 max-[1320px]:flex-col'>
+                <div className='pl-[40px] pr-[74px] max-[1100px]:mx-auto max-[1100px]:pl-0 max-[1100px]:pr-0'>
                     <Image
                         src={'/assets/imgTokenInfo.png'}
                         width={537}
@@ -298,7 +308,7 @@ const Home = () => {
                         alt='about image'
                     />
                 </div>
-                <div className='grid grid-cols-2 gap-x-[115px] gap-y-[80px] border-b-[2px] border-[#686868] pb-[126px]'>
+                <div className='grid grid-cols-2 gap-x-[115px] max-[1600px]:grid-cols-1 max-[1320px]:grid-cols-2 max-[1320px]:mt-10 gap-y-[80px] border-b-[2px] border-[#686868] pb-[126px] max-[1100px]:w-full max-[1100px]:text-center max-[670px]:grid-cols-1'>
                     {
                         listTokenInfo2.map((item, index) => {
                             return <div key={index}>

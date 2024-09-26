@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const DateTimeIcons = () => {
-    return <div className="flex items-center ">
+    return <div className="flex items-center max-[720px]:justify-center">
         <div>
             <Image
                 src={'/assets/days.png'}

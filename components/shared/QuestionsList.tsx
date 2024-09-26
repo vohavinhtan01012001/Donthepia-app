@@ -51,7 +51,7 @@ const QuestionsList = () => {
         {
             listQuestions.map((question, index) => {
                 return (
-                    <div key={index} className="flex items-start gap-[192px] w-[950px] pb-[62px]">
+                    <div key={index} className="flex items-start gap-[192px] w-[950px] pb-[62px] max-[1040px]:gap-2 max-[1040px]:w-full max-[1040px]:px-2">
                         <div className="w-full ">
                             <div className="flex items-center justify-start">
                                 <p className="text-[20px] font-poppins pr-[37px] text-white">0{index + 1}</p>

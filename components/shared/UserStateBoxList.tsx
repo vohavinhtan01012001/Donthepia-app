@@ -63,7 +63,7 @@ const UseStateBox = ({ user, number }: { user: userProps, number: number }) => {
             initial={{ x: 0 }}
             animate={{ x: number * 500 }}
             transition={{ duration: 0.3 }}
-            className="w-[500px] h-[280px] bg-[#232323] rounded-xl pl-[40px] pr-[80px]" style={{ marginTop: `${user.top}px` }}>
+            className="w-[500px] h-[280px] bg-[#232323] rounded-xl pl-[40px] pr-[80px] max-[510px]:w-full max-[510px]:min-w-[380px]" style={{ marginTop: `${user.top}px` }}>
             <p className="text-base leading-6 font-pretendard text-white pt-[46px] ">{user.text}</p>
             <div className="mt-[75px] flex items-center gap-[16px]">
                 <div className={`w-[48px] h-[48px] rounded-full `} style={{ background: user.color }}>
@@ -97,7 +97,7 @@ const UseStateBoxList = () => {
         setNumber(number)
     };
     return <>
-        <div className="flex items-end justify-start pl-[63px] gap-[8px] mb-[84px]">
+        <div className="flex items-end justify-start max-[700px]:justify-center max-[700px]:px-2 pl-[63px] gap-[8px] mb-[84px]">
             <ButtonIcon
                 icon={{
                     name: "button_left",
@@ -117,10 +117,10 @@ const UseStateBoxList = () => {
                 onClick={() => { disabled !== 'right' && handleAction(number - 1, 'right') }}
             />
         </div>
-        <div className="flex items-start justify-between gap-[16px] overflow-hidden -ml-[54px]">
+        <div className="flex items-start justify-between gap-[16px] overflow-hidden -ml-[54px] max-[516px]:ml-0 max-[516px]:px-2 max-[516px]:justify-center">
             {
                 users.map((user, index) => {
-                    return <div key={index}>
+                    return <div key={index} >
                         <UseStateBox user={user} number={number} />
                     </div>
                 })
